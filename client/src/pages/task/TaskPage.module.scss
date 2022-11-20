@@ -1,0 +1,32 @@
+@import '../../App.scss';
+
+.title{
+    margin-top:50px;
+    text-align: center;
+}
+
+.addInput{
+    display:block;
+    outline:none;
+    border:none;
+    background:none;
+    margin: 150px auto 0;
+    padding:5px;
+    width:240px;
+    height:40px;
+    border-bottom:solid 1px $mainred;
+    font-weight:400;
+    font-size:16px;
+    color:$mainblack;
+    &::placeholder{
+        color:grey;
+    } 
+}
+
+.control{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:40px auto 0;
+    width:240px;
+}

@@ -1,0 +1,12 @@
+@import '../../App.scss';
+
+.title{
+    font-weight: 700;
+    font-size: 48px;
+    .spanRed{
+        color:$mainred;
+    }
+    .spanBlack{
+        color:$mainblack;
+    }
+}

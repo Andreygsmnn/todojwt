@@ -1,0 +1,36 @@
+@import '../../App.scss';
+
+.form{
+    margin:0 auto;
+    padding-top:200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 205px;
+    .title{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+        color:white;
+    }
+    .button{
+        margin-top: 20px;
+        display:block;
+        outline:none;
+        border:none;
+        background: none;
+        font-weight: 400;
+        font-size:16px;
+        color: $mainred;
+        transition: all .2s linear;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.error{
+    text-align:center;
+    color:white;
+    font-size:16px;
+}

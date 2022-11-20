@@ -1,0 +1,46 @@
+@import '../../App.scss';
+
+.task{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:64px;
+    width:100%;
+    border-bottom: 1px solid $mainblack;
+    input{
+       display:none;
+
+    }
+    .userCheckbox{
+      display:block;
+      width:20px;
+      height:20px;
+      background: rgb(115, 198, 225);
+      border-radius: 50%;
+      cursor:pointer;
+    }
+    input:checked + .userCheckbox{
+        background: green;
+    }
+    .title{
+        font-style: normal;
+        font-weight:500;
+        font-size:20px;
+        text-align: center;
+        color: $mainblack;
+    }
+    .delete{
+      outline:none;
+      display:block;
+      background: none;
+      border:none;
+      cursor:pointer;
+      svg{
+        fill:$mainred;
+        transition:all .2s;
+      }
+      &:hover>svg{
+        fill:rgb(130, 2, 2);
+      }
+    }
+}
